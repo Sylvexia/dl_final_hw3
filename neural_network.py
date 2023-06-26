@@ -171,6 +171,3 @@ gen_confusion_matrix(train_true, train_pred, res_true, res_pred,
                      get_label_names(data_frame), "NeuralNetwork", dir)
 
 gen_loss_plt(train_losses, test_losses, dir)
-
-# predict_label = [0, 3, 1, 5, 3, 6, 7]
-# print(le.inverse_transform(predict_label))
