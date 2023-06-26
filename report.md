@@ -4,6 +4,11 @@
 
 This homework utilize SVM (Support Vector Machine), RandomForest, and custom Neural network to predict the bearing faults.
 
+## Data:
+
+The model, figure, and training result can be found at:
+https://drive.google.com/drive/folders/1ULuB6aa9Be28JnByolftuWS8x1V_A_Qw?usp=sharing
+
 ## Author 
 
 Team Name: "Team FianCatto"
@@ -138,8 +143,10 @@ Features:
 - crest (crest factor)
 - form (form factor)
 
-Fault type
+Fault type:
+
 location: ball, inner race, outer race.
+
 diameter of defects: 0.007, 0.014, 0.021 inches
 
 Classfication:
@@ -707,6 +714,16 @@ The result is not better than random forest.
 
 ## Conclusion
 
+The accuracy comparison:
+
+|Random Forest|Neural Network|SVM|FaultNet|
+|---|---|---|---|
+|95.89%|95.43%|93.48%|98.5%|
+
 - For the accuracy, FaultNet>random forest>neural network>svm for my own implementation.
 - 2300 data is not a big number, basically it can be done with simple machine learning technique without deep learning. Which still get good result in small amount of runtime.
-- I think part of the reason that FaultNet outperform my implementation is that it separate the data to multiple channel like mean and median signal to get more imformation from the signal. But it still feel really bizzare to me that how did they even get the accuracy to 98.5%.
+- I think part of the reason that FaultNet outperform my implementation is that it separate the data to multiple channel like mean and median signal to get more imformation from the signal. But it still feel really bizzare to me that how did they even get the accuracy to 98.5%. If only feed the raw data directly to their FaultNet CNN network, they got 95.27% accuracy, which is similar to my implemetation of neural network.
+
+## Final Words
+
+Machine learning still feels like magic, a lot of time you still cannot figure out why it works and what doesn't. Also, happy graduation to me.
