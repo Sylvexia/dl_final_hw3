@@ -543,7 +543,12 @@ The trainning loss:
 
 Here, I intentionally train my model with huge amount of epoches, and the validation loss seemed to have random glitch after overfitting. Which is interesting.
 
+The best model is choosed from which gives the greatest validation accuracy.
+
 #### Result:
+
+Test Accuracy: 95.43%
+The result is not better than random forest.
 
 ```
 {
@@ -702,4 +707,6 @@ Here, I intentionally train my model with huge amount of epoches, and the valida
 
 ## Conclusion
 
+- For the accuracy, FaultNet>random forest>neural network>svm for my own implementation.
 - 2300 data is not a big number, basically it can be done with simple machine learning technique without deep learning. Which still get good result in small amount of runtime.
+- I think part of the reason that FaultNet outperform my implementation is that it separate the data to multiple channel like mean and median signal to get more imformation from the signal. But it still feel really bizzare to me that how did they even get the accuracy to 98.5%.
