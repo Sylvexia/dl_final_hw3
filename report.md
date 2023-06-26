@@ -1,5 +1,9 @@
 #  深度學習 作業三
 
+It is advised to read the report.md on the github
+
+[link:(https://github.com/Sylvexia/dl_final_hw3)](https://github.com/Sylvexia/dl_final_hw3)
+
 ## Abstract
 
 This homework utilize SVM (Support Vector Machine), RandomForest, and custom Neural network to predict the bearing faults.
